@@ -15,6 +15,7 @@ public class AllInOneEarth : NavePai
     public GameManager gameManager;
     public GameObject winnerMarte;
     public GameObject canvasPrincipal;
+    public int damage = 1;
 
     void Start()
     {
@@ -65,12 +66,23 @@ public class AllInOneEarth : NavePai
         Instantiate(bulletPrefab, shootingPoint.position, shootingPoint.rotation); 
     }
 
-    public override void TakeDamage(int damage)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-        base.TakeDamage(damage);
+        if (hitInfo.CompareTag("Bala"))
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+            base.TakeDamage(damage);
+        }
     }
+}
+
+    //public override void TakeDamage(int damage)
+    //{
+        //currentHealth -= damage;
+        //healthBar.SetHealth(currentHealth);
+        //base.TakeDamage(damage);
+    //}
 
     //private void OnTriggerEnter2D(Collider2D other)
     //{
@@ -85,4 +97,3 @@ public class AllInOneEarth : NavePai
 
 
   
-}

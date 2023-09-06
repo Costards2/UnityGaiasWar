@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 530107660}
   m_Layer: 5
   m_Name: Canvas Fim
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 663173407}
   m_Layer: 0
   m_Name: Nave_Marte
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,6 +977,7 @@ MonoBehaviour:
   gameManager: {fileID: 1822626807}
   winnerTerra: {fileID: 1153334678}
   canvasPrincipal: {fileID: 1288495185}
+  damage: 1
 --- !u!1 &676508905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1283,7 @@ GameObject:
   - component: {fileID: 764239297}
   m_Layer: 0
   m_Name: Nave_Terra
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1415,6 +1416,7 @@ MonoBehaviour:
   gameManager: {fileID: 1822626807}
   winnerMarte: {fileID: 1237753092}
   canvasPrincipal: {fileID: 1288495185}
+  damage: 1
 --- !u!1 &807915937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4207,7 +4209,7 @@ GameObject:
   - component: {fileID: 2071769671}
   m_Layer: 5
   m_Name: BackGround
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

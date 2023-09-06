@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8566825871494482128}
   m_Layer: 0
   m_Name: Bullet-Earth
-  m_TagString: Untagged
+  m_TagString: Bala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  damage: 1
   rb: {fileID: 2332218559643784461}
 --- !u!50 &2332218559643784461
 Rigidbody2D:
